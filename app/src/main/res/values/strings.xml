@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MiniAppConvMonnaie</string>
+    <string name="montant">Entrer le montant à convertir</string>
+</resources>

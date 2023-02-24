@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/idMonnaie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/montant"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+    />
+
+    <RadioGroup
+        android:id="@+id/groupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idMonnaie"
+        android:layout_marginTop="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/DinEur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Conversion Dinars vers Euro"/>
+        <RadioButton
+            android:id="@+id/EurDin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Conversion Euro vers Dinars"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idMonnaie"
+        android:layout_centerInParent="true"
+        android:text="Résultat"/>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:text="Convertir" />
+
+
+</RelativeLayout>
